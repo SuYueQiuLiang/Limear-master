@@ -283,10 +283,10 @@ public class MainActivity extends AppCompatActivity
         transaction.hide(settingfragment);
         transaction.hide(mainfragment);
         transaction.hide(historyfragment);
+        transaction.hide(historyfragment);
         transaction.show(frag);
         transaction.commit();
     }
-    //test1123
 
 
     //将应用数据保存、读取，修改
