@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color4"
+    android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fram1"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="-20dp"
+                        android:alpha="0.4"
+                        android:fontFamily="sans-serif-light"
+                        android:text="13"
+                        android:textSize="96sp" />
+
+                    <TextView
+                        android:id="@+id/OneSentence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="52sp"
+                        android:layout_marginBottom="30sp"
+                        android:alpha="0.75"
+                        android:text="老夫聊发少年狂\n左牵黄，右擎苍"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        app:lineHeight="28sp" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/Linear1"
+                        android:orientation="vertical"
+                        android:background="@color/color1"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="16dp">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp">
+
+                                <TextView
+                                    android:id="@+id/t3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="72dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="@string/note"
+                                    android:textColor="@color/color3"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginStart="16dp"
+                                    android:src="@drawable/ic_flag"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <LinearLayout
+                                android:id="@+id/Linear2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:backgroundTint="@color/colorPrimary"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="0dp">
+
+                                    <TextView
+                                        android:id="@+id/note1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="end"
+                                        android:paddingStart="12dp"
+                                        android:paddingTop="8dp"
+                                        android:paddingEnd="12dp"
+                                        android:paddingBottom="8dp"
+                                        android:text="点击这里或者添加键加入备忘"
+                                        android:textColor="#a5d6a7"
+                                        android:textSize="14sp" />
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/notecardview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="60dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:backgroundTint="@color/colorPrimary"
+                                    android:visibility="gone"
+                                    app:cardCornerRadius="4dp"
+                                    app:cardElevation="0dp">
+
+                                    <TextView
+                                        android:id="@+id/note2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:gravity="right"
+                                        android:padding="5dp"
+                                        android:textSize="14sp" />
+
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fab"
+                    android:src="@drawable/ic_add_black"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/color2"
+                    android:layout_gravity="end"/>
+
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+                 
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/Recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never">
+
+                    </android.support.v7.widget.RecyclerView>
+                 
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="12dp" />
+                 
+                </LinearLayout>
+                
+            </ScrollView>
+    
+</LinearLayout>
